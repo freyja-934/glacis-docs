@@ -1,0 +1,338 @@
+.tokenSearch {
+  margin: 2rem 0;
+}
+
+.searchControls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.searchInput {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #9945ff;
+  box-shadow: 0 0 0 3px rgba(153, 69, 255, 0.1);
+}
+
+.filterSelect {
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  font-size: 1rem;
+  background: var(--ifm-background-color);
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.filterSelect:focus {
+  outline: none;
+  border-color: #9945ff;
+}
+
+.tokenStats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: var(--ifm-color-emphasis-100);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.tokenGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 1.5rem;
+}
+
+.tokenCard {
+  border: 2px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  padding: 1.5rem;
+  background: var(--ifm-background-color);
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tokenCard:hover {
+  border-color: #9945ff;
+  box-shadow: 0 4px 16px rgba(153, 69, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.tokenHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tokenSymbol {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+}
+
+.tokenBadges {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.badgeLayerZero {
+  background: linear-gradient(135deg, #3B82F6, #1E40AF);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badgeNTT {
+  background: linear-gradient(135deg, #10B981, #059669);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badgeNative {
+  background: linear-gradient(135deg, #9945ff, #7c3aed);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.badgeAdapter {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.badgeDefault {
+  background: var(--ifm-color-emphasis-300);
+  color: var(--ifm-color-emphasis-700);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.tokenInfo {
+  margin-bottom: 1rem;
+}
+
+.infoRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+  gap: 1rem;
+}
+
+.label {
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-700);
+  flex-shrink: 0;
+  min-width: 120px;
+}
+
+.address {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.8rem;
+  background: var(--ifm-code-background);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  word-break: break-all;
+  flex: 1;
+}
+
+.chainsList {
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-600);
+  text-align: right;
+  flex: 1;
+}
+
+.expandButton {
+  width: 100%;
+  padding: 0.75rem;
+  background: transparent;
+  border: 2px solid #9945ff;
+  border-radius: 8px;
+  color: #9945ff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.expandButton:hover {
+  background: #9945ff;
+  color: white;
+  transform: translateY(-1px);
+}
+
+.tokenDetails {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px solid var(--ifm-color-emphasis-200);
+}
+
+.tokenDetails h4 {
+  margin: 0 0 0.75rem 0;
+  color: var(--ifm-color-primary);
+  font-size: 1.1rem;
+}
+
+.contractsList {
+  margin-bottom: 1.5rem;
+}
+
+.contractRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  gap: 1rem;
+}
+
+.chainName {
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-700);
+  flex-shrink: 0;
+  min-width: 100px;
+}
+
+.contractAddress {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.8rem;
+  background: var(--ifm-code-background);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  word-break: break-all;
+  flex: 1;
+}
+
+.integrationInfo {
+  margin-top: 1rem;
+}
+
+.codeBlock {
+  background: var(--ifm-code-background);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.codeBlock pre {
+  margin: 0;
+  padding: 1rem;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.noResults {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.noResults p {
+  margin-bottom: 0.5rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tokenGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .searchControls {
+    flex-direction: column;
+  }
+  
+  .searchInput {
+    min-width: auto;
+  }
+  
+  .tokenStats {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  
+  .infoRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  
+  .contractRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  
+  .chainName {
+    min-width: auto;
+  }
+  
+  .tokenHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Dark mode adjustments */
+[data-theme='dark'] .tokenCard {
+  border-color: var(--ifm-color-emphasis-300);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme='dark'] .tokenCard:hover {
+  border-color: #9945ff;
+  box-shadow: 0 4px 16px rgba(153, 69, 255, 0.2);
+}
+
+[data-theme='dark'] .address,
+[data-theme='dark'] .contractAddress {
+  background: var(--ifm-color-emphasis-200);
+  border-color: var(--ifm-color-emphasis-400);
+} 
