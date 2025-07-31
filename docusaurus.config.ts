@@ -147,7 +147,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/glacislabs/sol-airlift',
+              href: 'https://github.com/glacislabs/glacis-docs',
             },
             {
               label: 'Glacis Labs',
