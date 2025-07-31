@@ -15,15 +15,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://sol-airlift-docs.glacislabs.com',
+  url: 'https://glacislabs.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/glacis-docs/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'glacislabs', // Usually your GitHub org/user name.
-  projectName: 'sol-airlift', // Usually your repo name.
+  projectName: 'glacis-docs', // Usually your repo name.
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -51,7 +51,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/glacislabs/sol-airlift/tree/main/docs/',
+            'https://github.com/glacislabs/glacis-docs/tree/main/docs/',
           routeBasePath: '/', // Docs at root URL
         },
         blog: false,
@@ -99,7 +99,7 @@ const config: Config = {
           label: 'Documentation',
         },
         {
-          href: 'https://github.com/glacislabs/sol-airlift',
+          href: 'https://github.com/glacislabs/glacis-docs',
           label: 'GitHub',
           position: 'right',
         },
