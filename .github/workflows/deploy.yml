@@ -34,9 +34,9 @@ jobs:
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
           
       - name: Setup pnpm
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@v4
         with:
-          version: 8
+          version: 9
           
       - name: Setup Node.js
         uses: actions/setup-node@v4
